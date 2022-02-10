@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div style="text-align:center; margin: 50px 0px;">
+      <h1 class="titulo">Ahorcado</h1>
+      <button class="btn-jugar" id="iniciar-juego">INICIAR JUEGO</button>
+    </div>
+    <div style="text-align:center">
+      <span id="mensaje"></span>
+      <input class="text-input" type="text" name = "nueva-palabra" id="input-nueva-palabra" placeholder="Escriba una nueva palabra">
+      <button class="btn" id="nueva-palabra">AGREGAR PALABRA</button> 
+    </div>
+    <div class="canvas" style="text-align:center;">
+      <span id="mensaje-error"></span>
+      <canvas id="ahorcado" height="800px" width="1200px"></canvas>
+    </div>
+    <div class="juego-nuevo" style="text-align:center">
+      <button class="invisible" id="nuevo-juego">NUEVO JUEGO</button>
+    </div>
+    <footer id="footer">
+      <h4 id="footer-año"></h4>
+    </footer>
+    <script src="js/iniciar-juego.js"></script>
+    <script src= "js/ahorcado.js"></script>
+    <script type="text/javascript" src="js/canvas.js"></script>
+    <script src="js/agregar-palabra.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
+</html>
